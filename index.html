@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="shortcut icon" href="img/logo.png" />
+	<link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+	<title>NetWorking</title>
+	<link rel="stylesheet" href="css/style.css"/>
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+
+	<link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'> 
+	<link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Belleza" rel="stylesheet">
+</head>
+<body>
+	<!----- HEADER START---> 
+	<header id="header">
+		<div class="content">
+			<div id="logo"><a href="">DISEÑO DE UNA RED<!--<div class="img"><img src="https://img.icons8.com/linen/50/000000/network-care.png"></div>-->&nbsp;&nbsp;</a></div>
+			<nav id="nav">
+ 				<ul>
+ 					<li><a href="#slide1" class="active" title="Next Section" >INICIO</a></li>
+ 					<li><a href="#slide3" title="Next Section">ANALISIS</a></li>
+ 					<li><a href="#slide5" title="Next Section">TOPOLOGIAS</a></li>
+ 					<li><a href="#slide7" title="Next Section">DISPOSITIVOS</a></li>
+ 					<li><a href="#slide9" title="Next Section">INTERCONEXION</a></li>
+ 					<li><a href="#slide11" title="Next Section">PROBLEMAS</a></li>
+ 					<li><a href="#slide13" title="Next Section">TARJETA</a></li>
+ 					<li><a href="#slide15" title="Next Section">CABLEADO</a></li>
+ 					<li><a href="instalacion.html" >INSTALACION</a></li>
+ 				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!----- SLIDES START ---> 
+ 	<div id="slide1">
+ 		<div class="content">
+ 			<br><br><br><br><br><br>
+			<h2>INTRODUCCION</h2>
+ 			<div id="divider"></div>
+ 		</div> 
+ 	</div> 
+
+ 	<div id="slide2">
+ 		<div class="content" >
+ 			<div class="quotes_container">
+ 			<p class="titulo">INTRODUCCION</p>	
+ 			<h3 class="quotes">LAN son las siglas de "Local Area Network", es decir, Red de área local.
+			Una Red LAN conecta diferentes ordenadores en un área pequeña, como un edificio o una habitación, lo que permite a los usuarios enviar, compartir y recibir archivos.<br>Un sistema de redes LAN conectadas mediante líneas telefónicas se denomina WAN "Wide-Area Network", es decir, es una red de área ancha.
+			Cada ordenador individual conectado a una LAN se denomina "nodo", el cual tiene su propia CPU.<br>El término red local incluye tanto el hardware como el software necesario para la interconexión de los distintos dispositivos y el tratamiento de la información. Las redes LAN se pueden conectar entre ellas a través de líneas telefónicas y ondas de radio. Su extensión es limitada a un entorno máximo de 200m. Las estaciones de trabajo y los ordenadores personales en oficinas normalmente están conectados en una red LAN.</h3>
+ 			</div> 
+ 		</div> 
+ 	</div> 
+
+ 	<div id="slide3">
+ 		<div class="content">
+ 			<br><br><br><br><br><br>
+			<h2>ANÁLISIS Y DISEÑO DE UNA RED LAN</h2>
+ 			<div id="divider"></div>
+ 		</div> 
+ 	</div>
+
+ 	<div id="slide4">
+ 		<div class="content">
+ 			<div class="quotes_container">
+ 			<h3 class="quotes">No hay empresa sin red local LAN, ya que suponemos que una empresa se compone de más de un empleado. Es decir, la red LAN tiene como objetivo la interconexión de los usuarios para compartir información (y no se cumple siempre a pesar de la obviedad).<br>Para dimensionar correctamente una red local LAN y determinar los elementos de red que la componen tenemos en cuenta:<br></h3>
+ 			<ul>
+ 				<li>Número de puertos de cada una de las plantas de la delegación que ‘cableamos’. Debemos también cuantificar el número de puertos con mayor capacidad de trasmisión (de 1Gb por ejemplo en vez del clásico 10/100Mb) para aplicaciones específicas como servidores.</li>
+ 				<li>La necesidad para que los puertos ofrezcan alimentación o no a los equipos a los que se conectarán. Esta funcionalidad es bastante útil cuando queramos por ejemplo conectar a un puerto un punto de acceso WiFi. En este caso no necesitaremos una toma de alimentación aparte para el punto de acceso Wifi; lo dará el switch mismo que lo conectará.</li>
+ 				<li>- Trabajos especiales de instalación: Desenrocado de equipos antiguos instalados, parcheo, latiguillos de longitud especial.</li>
+ 				<li>Los presuntos problemas ligados a la configuración misma de la red (Protocolo de Spanning Tree, duplicidad en el direccionamiento de la red, las tormentas de ‘broadcast’ por bucles inherentes, etc.</li>
+ 			</ul>
+ 			</div> 
+ 		</div> 
+ 	</div> 
+
+ 	<div id="slide5">
+ 		<div class="content">
+ 			<h2>TOPOLOGIAS</h2>
+ 			<div id="divider"></div>
+ 		</div> 
+ 	</div> 
+
+ 	<div id="slide6">
+ 		<div class="content">
+ 			<div class="quotes_container">
+ 				<h5>Topología de bus</h5>
+ 				<center><img src="img/bus.jpg"></center>
+ 				<h3 class="quotes">Red cuya topología se caracteriza por tener un único canal de comunicaciones (denominado bus, troncal o backbone) al cual se conectan los diferentes dispositivos. De esta forma todos los dispositivos comparten el mismo canal para comunicarse entre sí.<br>La topología de bus tiene todos sus nodos conectados directamente a un enlace y no tiene ninguna otra conexión entre sí. Físicamente cada host está conectado a un cable común, por lo que se pueden comunicar directamente. La ruptura del cable hace que los hosts queden desconectados.<br>Los extremos del cable se terminan con una resistencia de acople denominada terminador, que además de indicar que no existen más ordenadores en el extremo, permiten cerrar el bus por medio de un acople de impedancias.<br>Es la tercera de las topologías principales. Las estaciones están conectadas por un único segmento de cable. A diferencia de una red en anillo, el bus es pasivo, no se produce generación de señales en cada nodo.<br><caption>VENTAJAS:</caption><br></h3>
+ 				<ul>
+ 					<li>Facilidad de implementación.</li>
+ 					<li>Crecimiento y simplicidad de arquitectura.</li>
+ 				</ul>
+ 				<caption>DESVENTAJAS:</caption><br>
+ 				<ul>
+ 					<li>Longitudes de canal limitadas.</li>
+ 					<li>Un problema en el canal usualmente degrada la red.</li>
+ 				</ul>
+ 				<br><br>
+ 				<h5>Topología de anillo.</h5>
+ 				<center><img src="img/anillo.jpg"></center>
+ 				<h3 class="quotes">Topología de red en la que cada estación está conectada a la siguiente y la última está conectada a la primera. Cada estación tiene un receptor y un transmisor que hace la función de repetidor, pasando la señal a la siguiente estación.<br>En este tipo de red la comunicación se da por el paso de un token o testigo, que se puede conceptualizar como un cartero que pasa recogiendo y entregando paquetes de información, de esta manera se evitan eventuales pérdidas de información debidas a colisiones.<br>Cabe mencionar que si algún nodo de la red deja de funcionar, la comunicación en todo el anillo se pierde.<br>En un anillo doble, dos anillos permiten que los datos se envíen en ambas direcciones. Esta configuración crea redundancia (tolerancia a fallos), lo que significa que si uno de los anillos falla, los datos pueden transmitirse por el otro.<br><caption>VENTAJAS:</caption></h3>
+ 				<ul>
+ 					<li>Simplicidad de arquitectura.</li>
+ 					<li>Facilidad de implementación.</li>
+ 				</ul>
+ 				<caption>DESVENTAJAS:</caption><br>
+ 				<ul>
+ 					<li>El canal usualmente degrada la red.</li>
+ 				</ul>
+ 				<br><br>
+ 				<h5>Topología de árbol</h5>
+ 				<CENTER><img src="img/arbol.jpg"></CENTER>
+ 				<h3 class="quotes">Topología de red en la que los nodos están colocados en forma de árbol. Desde una visión topológica, la conexión en árbol es parecida a una serie de redes en estrella interconectadas salvo en que no tiene un nodo central. En cambio, tiene un nodo de enlace troncal, generalmente ocupado por un hub o switch, desde el que se ramifican los demás nodos. Es una variación de la red en bus, la falla de un nodo no implica interrupción en las comunicaciones. Se comparte el mismo canal de comunicaciones.<br>La topología en árbol puede verse como una combinación de varias topologías en estrella. Tanto la de árbol como la de estrella son similares a la de bus cuando el nodo de interconexión trabaja en modo difusión, pues la información se propaga hacia todas las estaciones, solo que en esta topología las ramificaciones se extienden a partir de un punto raíz (estrella), a tantas ramificaciones como sean posibles, según las características del árbol.</h3>
+ 				<br>
+ 				<caption>VENTAJAS:</caption>
+ 				<br>
+ 				<ul>
+ 					<li>El cableado es de punto a punto para segmentos individuales.</li>
+ 					<li>Soporte de multitud de vendedores de software y hardware.</li>
+ 				</ul>
+ 				<br>
+ 				<caption>DESVENTAJAS:</caption>
+ 				<br>
+ 				<ul>
+ 					<li>La medida de cada segmento viene determinada por el tipo de cable si se viene abajo el segmento toda falla.</li>
+ 				</ul>
+ 				<br><br>
+ 				<h5>Topología de estrella</h5>
+ 				<center><img src="img/estrella.jpg"></center>
+ 				<h3 class="quotes">Una red en estrella es una red en la cual las estaciones están conectadas directamente a un punto central y todas las comunicaciones que han de hacer necesariamente a través de este.<br>Dado su transmisión, una red en estrella activa tiene un nodo central activo que normalmente tiene los medios para prevenir problemas relacionados con el eco.<br>Se utiliza sobre todo para redes locales. La mayoría de las redes de área local que tienen un enrutador (router), un conmutador(switch) o un concentrador (hub) siguen esta topología. El nodo central en estas sería el enrutador, el conmutador o el concentrador, por el que pasan todos los paquetes.<br></h3>
+ 				<caption>VENTAJAS:</caption>
+ 				<ul>
+ 					<li>Permite la comunicación de los demás nodos, presenta medios para prevenir problemas.</li>
+ 					<li>Mantenimiento económico.</li>
+ 				</ul>
+ 				<br>
+ 				<caption>DESVENTAJAS:</caption>
+ 				<br>
+ 				<ul>
+ 					<li>Si el HUB falla la red no tiene comunicación si el nodo central falla toda la red se desconecta.</li>
+ 				</ul>
+ 				<br><br>
+ 				<h5>Topología de malla</h5>	
+ 				<center><img src="img/malla.jpg"></center>
+ 				<br><br>
+ 				<h3 class="quotes">La topología en malla es una topología de red en la que cada nodo está conectado a todos los nodos. De esta manera es posible llevar los mensajes de un nodo a otro por diferentes caminos. Si la red de malla está completamente conectada, no puede existir absolutamente ninguna interrupción en las comunicaciones. Cada servidor tiene sus propias conexiones con todos los demás servidores.<br>El establecimiento de una red de malla es una manera de encaminar datos, voz e instrucciones entre los nodos. Las redes de malla se diferencian de otras redes en que los elementos de la red (nodo) están conectados todos con todos, mediante cables separados. Esta configuración ofrece caminos redundantes por toda la red de modo que, si falla un cable, otro se hará cargo del tráfico.<br>Esta topología, a diferencia de otras (como la topología en árbol y la topología en estrella), no requiere de un servidor o nodo central, con lo que se reduce el mantenimiento (un error en un nodo, sea importante o no, no implica la caída de toda la red).<br>Las redes de malla son auto ruteables. La red puede funcionar, incluso cuando un nodo desaparece o la conexión falla, ya que el resto de los nodos evitan el paso por ese punto. En consecuencia, la red malla, se transforma en una red muy confiable.<br>Es una opción aplicable a las redes sin hilos (Wireless), a las redes cableadas (Wired) y a la interacción del software de los nodos.<br></h3>			
+ 				<caption>VENTAJAS: </caption><br>
+ 				<ul>
+ 					<li>Ofrece una redundancia, fiabilidad superior y son ruteables.</li>
+ 				</ul>
+ 				<br><br>
+ 				<caption>DESVENTAJAS: </caption><br>
+ 				<ul>
+ 					<li>Es de baja eficiencia de las conexiones y enlaces debido a la existencia de enlaces redundantes.</li>
+ 				</ul>	
+ 			</div>
+ 		</div>
+ 	</div>
+
+ 	<div id="slide7">
+ 		<div class="content">
+ 			<h2>DISPOSITIVOS DE EXPANSION</h2>
+ 			<div id="divider"></div>
+ 		</div> 
+ 	</div>
+
+ 	<div id="slide8">
+ 		<div class="content">
+ 			<div class="quotes_container">
+ 				<h3 class="quotes">Los dispositivos de expansión son objetos que contienen diversos circuitos integrados y controladores, que insertada en su correspondiente ranura de expansión sirve para expandir las capacidades de la computadora.</h3><br>
+ 				<ul>
+ 					<li>MÓDEM O ENRUTADOR.</li>
+ 					<h3 class="quotes">Dispositivo de expansión que permite entrar al internet por medio del cable de teléfono. Modular: de analógico a digital. Demodular: de digital a analógico.</h3>
+ 				</ul>
+ 				<ul>
+ 					<li>CONECTADORES HUB </li>
+ 					<h3 class="quotes">	Es un equipo de redes que permite conectar entre sí otros equipos y retransmite los paquetes que recibe desde cualquiera de ellos a todos los demás. Funciona como repetidor de señal para que no se pierda la red. Envía la información maquina por máquina hasta el nodo final.</h3>
+ 				</ul>
+ 				<ul>
+ 					<li>CONMUTADOR O SWITCH </li>
+ 					<h3 class="quotes">	Es un dispositivo digital de lógica de interconexión de redes de computadores. Hace un análisis de información decodificando la dirección IP lo cual permite el envió de información directo a la máquina destino.</h3>
+ 				</ul>
+ 				<ul>
+ 					<li>ROUTER </li>
+ 					<h3 class="quotes">•	Es un dispositivo que selecciona la ruta más corta cuando el tráfico o el número de nodos es excesivo (acceso a internet). Se utiliza tanto en redes de área local como en redes de área extensa.</h3>
+ 				</ul>
+ 				<ul>
+ 					<li>UNIDAD DE ACCESO MÚLTIPLE (MAU)</li>
+ 					<h3 class="quotes">Este dispositivo físicamente es un switch con una capacidad de interconexión para cable UTP. El MAU permite el envío de información a través del token en una topología anillo lógico mandando la señal no por nodo hasta llegar a la máquina destino.</h3>
+ 				</ul>
+ 				<ul>
+ 					<li>TARJETA DE RED </li>
+ 					<h3 class="quotes">•	Dispositivo de expansión principal en una red la cual permite la interpretación de señal y comunicación de los equipos en una red de área local.</h3>
+ 				</ul>
+ 				<br><br>
+ 				<h3 class="quotes">Los dispositivos de expansión sirven para que, al momento de crear una red, si es el caso y hacemos una grande, los dispositivos nos permitirán tenerla conectada y permitir un buen funcionamiento.</h3>
+ 		</div>
+ 	</div>
+
+ 	<div id="slide9">
+ 		<div class="content">
+ 			<h2>MECANISMOS DE INTERCONEXION</h2>
+ 			<div id="divider"></div>
+ 		</div> 
+ 	</div>
+
+ 	<div id="slide10">
+ 		<div class="content">
+ 			<div class="quotes_container">
+ 				<H5>Concentradores (Hubs) </H5>
+ 				<h3 class="quotes">Un concentrador es un dispositivo pasivo que actúa como punto de conexión central entre PCs, servidores e impresoras, para formar un segmento LAN independiente. Los equipos conectados al propio concentrador son miembros de dicho segmento LAN, y comparten el ancho de banda del concentrador para sus comunicaciones.<BR>
+				Los concentradores aparecieron como solución al problema de las redes que se conectaban a un único cable (redes en bus), ya que si este cable se deterioraba, la red dejaba de ser operativa. El hub hace de punto central de todas las conexiones de manera que si un cable de conexión de un equipo a la red se estropea, el resto de la red puede seguir operativa. Un concentrador es el centro donde convergen las conexiones de todos los equipos.<BR>Dispone de una serie de puertos de entrada y salida a los que se conectan las computadoras de la red. Otra de las tareas que debe desempeñar un concentrador es la ampliación y regeneración de la señal que están enviando los equipos, ya que la señal eléctrica enviada a través del cable pierde potencia. Además, toman la señal de uno de sus puertos y la envían al resto de los equipos de la red.<BR>Básicamente actuaría como un medio de conducción para los datos. Al poseer múltiples puertos, cuando una trama llega a uno de sus puertos, ésta es copiada a los demás puertos, así los demás segmentos de la LAN pueden verla. El concentrador no sabe ni entiende a quien va dirigida esa señal o trama. Simplemente la copia a todos los demás puertos. Esto, evidentemente, consume recursos de la red. Además en una LAN basada en concentradores, éstos deben competir por el medio compartido: se producen colisiones y retardos.<BR><BR>
+				<h5>Conmutadores (Switches)</h5>
+				<h3 class="quotes">Dispositivo semejante a un concentrador, de hecho se le conoce técnicamente como concentrador conmutado. Filtran y dirigen tramas entre los segmentos de la LAN proporcionando un ancho de banda dedicado: forman un circuito virtual entre el equipo emisor y el receptor, y disponen de todo el ancho de banda del medio durante la fracción de segundo que tardan en realizar la transmisión.<br>
+				La función de un switch consiste en tomar la dirección MAC de una trama de datos y, en función de ella, enviar la información por el puerto correspondiente. En comparación con el hub, actúa más inteligentemente ya que filtra el tráfico y tiene capacidad de reconocimiento. Los datos pueden conducirse por rutas separadas, mientras que en el hub, las tramas son conducidas por todos los puertos.<br>Los conmutadores son capaces de realizar esto utilizando una mejor electrónica que la empleada por los concentradores, troceando el ancho de banda en franjas, llamadas canales, lo suficientemente grandes como para dar servicio a cada puerto de conmutación.<br>Las redes conmutadas son más rápidas puesto que el ancho de banda perdido por colisiones se elimina. Por ejemplo, si un concentrador de 24 puertos tiene un dominio de colisión de 24, un conmutador de 24 puertos tendría un dominio de colisión de 1. Evidentemente son algo más complejos de configurar y administrar que los concentradores, y por supuesto más caros. <br><br>
+				<h5>Cortafuegos (Firewalls)</h5>
+				<h3 class="quotes">Un cortafuegos es un sistema diseñado para prevenir accesos no autorizados. Generalmente se utilizan para proteger las redes privadas de intentos de acceso de usuarios de Internet no autorizados, pero también se puede configurar el cortafuegos a la inversa: para que los usuarios de la Intranet no tengan acceso a ciertos hosts. El cortafuegos puede ser hardware, software, o una combinación de ambos. Muchas veces son enrutadores especializados que comprueban que cada paquete cumple las políticas de seguridad con las que ha sido programado. Un cortafuegos forma un cuello de botella intencionado del tráfico y monitoriza constantemente las conexiones internas/ externas para verificar que se cumple la seguridad.</h3><br><br>
+				<h5>Puentes (Bridges)</h5>
+				<h3 class="quotes">Un puente es un dispositivo que conecta dos redes de área local (LAN) o dos segmentos de la misma LAN. Las LANs pueden emplear protocolos de capa dos del mismo tipo, por ejemplo una red Ethernet conectada a una tipo Token-Ring. Funciona en la capa dos del modelo OSI.<br>Las funciones de un puente son:<br></h3>
+				<ul>
+					<li>Dividir una red LAN en dos subredes. Cuando una LAN se hace demasiado grande, en cuanto a número de puestos o extensión, debe ser dividida para que su funcionamiento sea mejor.</li>
+					<li>Interconectar dos redes LAN, pudiendo tener protocolos de nivel dos o medios de transmisión distintos. Interconexión de una red inalámbrica a una de cable o una red Ethernet a otra Token Ring.</li>
+					<li>Controlar las tramas defectuosas.</li>
+				</ul>
+				<h3 class="quotes">Independientemente del objetivo por el que se haya conectado el puente a la red su funcionamiento será siempre el mismo. Básicamente los puentes reciben todos los paquetes enviados por cada red acoplada a él, y los reenvían selectivamente entre las LAN's, utilizando solo las direcciones MAC (de enlace) para determinar donde retransmitir cada paquete. Los puentes reenvían solo aquellos paquetes que están destinados a un nodo del otro lado del puente, descartando (filtrando) aquellos que no necesitan ser retransmitidos o haya detectado que son defectuosos.</h3>
+				<h5>Pasarelas (Gateways)</h5>
+				<h3 class="quotes">El concepto de pasarela es quizás algo abstracto. Básicamente es un sistema de hardware o software que hace de puente entre dos aplicaciones o redes incompatibles para que los datos puedan ser transferidos entre distintos ordenadores. Cuando un usuario se conecta a Internet, realmente se está conectando a un servidor que le proporciona las páginas Web. Tanto el usuario como el servidor son nodos host de una red, no pasarelas. Una pasarela es, por ejemplo, un enrutador que dirige el trafico desde una estación de trabajo a la red exterior que sirve las páginas Web. O, en el caso de acceso telefónico, la pasarela sería el ISP.</h3>
+ 		</div>
+ 	</div>
+
+ 	<div id="slide11">
+ 		<div class="content">
+ 			<h2>PROBLEMAS QUE SE PUEDEN PRESENTAR.</h2>
+ 			<div id="divider"></div>
+ 		</div> 
+ 	</div>
+
+ 	<div id="slide12">
+ 		<div class="content">
+ 			<div class="quotes_container">
+ 			<H3 class="quotes"><b>Cable dañado:</b>El dispositivo se puede conectar, pero el rendimiento es muy pobre. En otros casos el dispositivo no se puede conectar.<br><b>Dead Drop:</b>Un dispositivo está conectado a la conexión de pared, pero la conexión no está activada.<br><b>No hay conexión al servido:</b>Un usuario no se puede conectar a una aplicación como correo electrónico o una aplicación ERP.<br><b>Asignación Incorrecta de VLAN:</b>Cuando estas conectando un telefono IP, tiene conexión a nivel físico pero no puede funcionar adecuadamente.<br><b>Duplex mismatch:</b>La conexión se establece pero deja de funcionar continuamente, básicamente se refiere a que los puertos no han negociado adecuadamente la tasa de bits máxima a la cual funcionar y continuamente entran en autonegociación.<br><b>Fallas de rendimiento en aplicaciones:</b>Las aplicaciones se ven lentas y a veces tardan mucho tiempo en responder, típicamente se culpa a la red de tal comportamiento.<br><b>Problemas de impresión:</b>Las impresoras se “ven” activas, pero cuando se envia un trabajo de impresión, este simplemente no sale.<br><b>Problemas de DNS:</b>El usuario tiene conexión, dirección IP y todo funciona con un ping. Sin embargo, no se puede conectar a aplicaciones o navegar en Internet.<br><b>Cliente inalámbrico sin conexión:</b>Se puede detectar el Access Point, pero no se puede conectar a la red.<br><b>No se puede obtener una dirección IP:</b>La red parece estar fuera de servicio y el sistema operativo reporta que no tiene una dirección IP desde el servidor DHCP.</H3>
+ 		</div>
+ 	</div>
+
+ 	<div id="slide13">
+ 		<div class="content">
+ 			<h2>TARJETA A UTILIZAR.</h2>
+ 			<div id="divider"></div>
+ 		</div> 
+ 	</div>
+
+ 	<div id="slide14">
+ 		<div class="content">
+ 			<div class="quotes_container">
+ 			<h3 class="quotes">La tarjeta de red, también conocida como placa de red, adaptador de red, adaptador LAN, Interfaz de red física, o sus términos en inglés Network Interface Card o Network interface controller (NIC), cuya traducción literal del inglés es tarjeta de interfaz de red (TIR), es un componente de hardware que conecta una computadora a una red informática y que posibilita compartir recursos (como archivos, discos duros enteros, impresoras e internet) entre dos o más computadoras, es decir, en una red de computadoras.<br>Las primeras tarjetas de interfaz de red se implementaban comúnmente en tarjetas de expansión que se conectaban en un bus de la computadora. El bajo costo y la ubicuidad del estándar Ethernet hizo posible que la mayoría de las computadoras modernas tengan una interfaz de red integrada en la placa base. Las placas base de servidor más nuevas pueden incluso tener interfaces de red duales incorporadas.<br>Las capacidades de Ethernet están ahora integradas en el chipset de la placa base o implementadas a través de un chip Ethernet dedicado de bajo costo, conectado a través del bus PCI (o el nuevo PCI Express), así que no se requiere una tarjeta de red por separado a menos que se necesiten interfaces adicionales o se utilice otro tipo de red.<br>Las modernas Tarjetas de red ofrecen funciones avanzadas como interfaz de interrupción y DMA para los procesadores host, soporte para múltiples colas de recepción y transmisión, particionamiento en múltiples interfaces lógicas y procesamiento de tráfico de red en controlador, como el motor de descarga TCP.</h3>
+ 		</div>
+ 	</div>
+
+ 	<div id="slide15">
+ 		<div class="content">
+ 			<h2>CABLEADO.</h2>
+ 			<div id="divider"></div>
+ 		</div> 
+ 	</div>
+
+ 	<div id="slide16">
+ 		<div class="content">
+ 			<div class="quotes_container">
+ 			<h3 class="quotes">El cable es el medio a través del cual fluye la información a través de la red. Hay distintos tipos de cable de uso común en redes LAN. Una red puede utilizar uno o más tipos de cable, aunque el tipo de cable utilizado siempre estará sujeto a la topología de la red, el tipo de red que utiliza y el tamaño de esta.<br>Estos son los tipos de cable más utilizados en redes LAN:<br></h3>
+ 			<ul>
+ 				<li>Cable de par trenzado sin apantallar / UTP Unshielded twisted pair.</li>
+ 				<li>Cable de par trenzado apantallado / STP Shielded twisted pair.</li>
+ 				<li>Cable coaxial.</li>
+ 				<li>Cable de fibra óptica.</li>
+ 				<li>LAN´s sin cableado.</li>
+ 			</ul>
+ 			<br><br>
+ 			<h5>Cable de par trenzado sin apantallar / Unshielded Twisted Pair (UTP)</h5>
+ 			<img src="">
+ 			<h3 class="quotes">Este tipo de cable es el más utilizado. Tiene una variante con apantallamiento pero la variante sin apantallamiento suele ser la mejor opción para una PYME.<br>La calidad del cable y consecuentemente la cantidad de datos que es capaz de transmitir varían en función de la categoría del cable. Las gradaciones van desde el cable de teléfono, que solo transmite la voz humana a el cable de categoría 5 capaz de transferir 100 Megabits por segundo.<br>La diferencia entre las distintas categorías es la tirantez. A mayor tirantez mayor capacidad de transmisión de datos. Se recomienda el uso de cables de Categoría 3 o 5 para la implementación de redes en PYMES (pequeñas y medianas empresas). Es conveniente sin embargo utilizar cables de categoría 5 ya que estos permitirán migraciones de tecnologías 10Mb a tecnología 100 Mb.<br>Conector UTP<br>El estandar para conectores de cable UTP es el RJ-45. Se trata de un conector de plástico similar al conector del cable telefónico. La siglas RJ se refieren al estandar Registerd Jack, creado por la industria telefónica. Este estandar define la colocación de los cables en su pin correspondiente.</h3>
+ 			<h5>Cable de par trenzado pantallado / Shielded Twisted Pair (STP)</h5>
+ 			<img src="">
+ 			<h3 class="quotes">Una de las desventajas del cable UTP es que es susceptible a las intereferencias eléctricas. Para entornos con este problema existe un tipo de cable UTP que lleva apantallamiento, esto es, protección contra interferencias eléctricas. Este tipo de cable se utiliza con frecuencia en redes con topología Token Ring. </h3>
+ 			<h5>Cable Coaxial</h5>
+ 			<img src="">
+ 			<h3 class="quotes">El cable coaxial contiene un conductor de cobre en su interior. Este va envuelto en un aislante para separarlo de un apantallado metálico con forma de rejilla que aisla el cable de posibles interferencias externas.<br>Aunque la instalación del cable coaxial es más complicada que la del UTP, este tiene un alto grado de resistencia a las interferencias. Por otra parte también es posible conectar distancias mayores que con los cables de par trenzado. Existen dos tipos de cable coaxial, el fino y el grueso conocidos como thin coaxial y thick coaxial.<br> <b>Conector para cable coaxial</b><br>El más usado es el conector BNC. BNC son las siglas de Bayone-Neill-Concelman. Los conectores BNC pueden ser de tres tipos: normal, terminadores y conectores en T.</h3>
+ 			<h5>Cable de fibra óptica</h5>
+ 			<img src="">
+ 			<h3 class="quotes">El cable de fibra óptica consiste en un centro de cristal rodeado de varias capas de material protector. Lo que se transmite no son señales eléctricas sino luz con lo que se elimina la problemática de las interferencias. Esto lo hace ideal para entornos en los que haya gran cantidad de interferencias eléctricas. También se utiliza mucho en la conexión de redes entre edificios debido a su inmunidad a la humedad y a la exposición solar. </h3>
+ 			<caption>Características:</caption>
+ 			<ul>
+ 				<li>El aislante exterior está hecho de teflón o PVC.</li>
+ 				<li>Fibras Kevlar ayudan a dar fuerza al cable y hacer más difícil su ruptura.</li>
+ 				<li>Se utiliza un recubrimiento de plástico para albergar a la fibra central.</li>
+ 				<li>El centro del cable está hecho de cristal o de fibras plásticas.</li>
+ 			</ul>
+ 			<br><br>
+ 			<h3 class="quotes"><b>Conectores para fibra óptica</b><br><img src=""><br> El conector de fibra óptica más utilizado es el conector ST. Tiene una apariencia similar a los conectores BNC. También se utilizan, cada vez con más frecuencia conectores SC, de uso más fácil.</h3>
+ 			<h5>Redes LAN sin cableado.</h5>
+ 			<h3 class="quotes">No todas las redes se implementan sobre un cableado. Existen redes que utilizan señales de radio de alta frecuencia o haces infrarrojos para comunicarse. Cada punto de la red tiene una antena desde la que emite y recibe. Para largas distancias se pueden utilizar teléfonos móviles o satélites.<br>Este tipo de conexión está especialmente indicada para su uso con portátiles o para edificios viejos en los que es imposible instalar un cableado.<br>Las desventajas de este tipo de redes es sus altos costes, su susceptibilidad a las intereferencias electromagnéticas y la baja seguridad que ofrecen. Además son más lentas que las redes que utilizan cableado.</h3>
+ 		</div>
+ 	</div>
+ <!----- SLIDES END --->
+
+</body>
+</html>
